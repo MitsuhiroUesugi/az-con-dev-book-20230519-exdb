@@ -43,5 +43,5 @@ jobs:
     - name: Update Staging Slot with the Latest Image #
       run: |
         az webapp config container set --resource-group "rg20230501-azcon" \
-          --name "webapp20230502" --slot Staging \
+          --name "webapp20230502" \
           --docker-custom-image-name acr20230501.azurecr.io/todolist:v1.0.0-tem_17.0.4_8-jre-alpine_$GITHUB_SHA
